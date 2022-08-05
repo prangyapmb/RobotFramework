@@ -1,0 +1,19 @@
+==============================================================================
+Parallel Test Execution :: Suite description                                  
+==============================================================================
+Launch OrangeHRM Login Page                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\RobotFramework\UI_Test\Parallel_Test_Execution.robot:6
+    T:  Launch OrangeHRM Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\RobotFramework\UI_Test\Parallel_Test_Execution.robot:10
+      Input Text xpath=//input[@id='txtUsername']    Admin
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Input Text xpath=//input[@id='txtUsername']' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?
+------------------------------------------------------------------------------
+Parallel Test Execution :: Suite description                          | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\RobotFramework\UI_Test\Results3\pabot_results\0\output.xml

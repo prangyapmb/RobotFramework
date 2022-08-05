@@ -1,0 +1,19 @@
+==============================================================================
+OrangrHRM Login With Variable :: Suite description                            
+==============================================================================
+Launch OrangeHRM Login Page                                             
+  Traceback (most recent call last):
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\RobotFramework\UI_Test\OrangrHRM_Login_With_Variable.robot:9
+    T:  Launch OrangeHRM Login Page    
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    File  C:\RobotFramework\UI_Test\OrangrHRM_Login_With_Variable.robot:12
+      Input Text name=txtUsername    Admin
+______________________________________________________________________________
+| FAIL |
+No keyword with name 'Input Text name=txtUsername' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?
+------------------------------------------------------------------------------
+OrangrHRM Login With Variable :: Suite description                    | FAIL |
+1 test, 0 passed, 1 failed
+==============================================================================
+Output:  C:\RobotFramework\UI_Test\pabot_results\0\output.xml

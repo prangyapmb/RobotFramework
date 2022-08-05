@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220801 11:19:31.109" rpa="false" schemaversion="3">
+<suite id="s1" name="Depends On Testcase Execution" source="C:\RobotFramework\UI_Test\Depends_On_Testcase_Execution.robot">
+<test id="s1-t1" name="Login_To_OrangeHRM" line="8">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/ chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220801 11:19:31.397" level="INFO">Opening browser 'firefox' to base url 'https://opensource-demo.orangehrmlive.com/ chrome'.</msg>
+<msg timestamp="20220801 11:19:31.398" level="INFO">Firefox driver log is always forced to to: C:\RobotFramework\UI_Test\Results4\pabot_results\0\geckodriver-1.log</msg>
+<msg timestamp="20220801 11:19:31.408" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220801 11:19:31.409" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20220801 11:19:31.396" endtime="20220801 11:19:31.412"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.412" endtime="20220801 11:19:31.413"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//input[@id='txtUsername']</arg>
+<arg>Admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.413" endtime="20220801 11:19:31.413"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=txtPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.413" endtime="20220801 11:19:31.413"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css=input[id='btnLogin']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.413" endtime="20220801 11:19:31.414"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=5</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.414" endtime="20220801 11:19:31.414"/>
+</kw>
+<status status="FAIL" starttime="20220801 11:19:31.394" endtime="20220801 11:19:31.415">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20220801 11:19:31.121" endtime="20220801 11:19:31.416"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Depends On Testcase Execution">Depends On Testcase Execution</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

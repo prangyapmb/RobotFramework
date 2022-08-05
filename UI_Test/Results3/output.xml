@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 5.0.1 (Python 3.10.5 on win32)" generated="20220801 11:08:32.571" rpa="false" schemaversion="3">
+<suite id="s1" name="Parallel Test Execution" source="C:\RobotFramework\UI_Test\Parallel_Test_Execution.robot">
+<test id="s1-t1" name="Launch OrangeHRM Login Page" line="6">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://opensource-demo.orangehrmlive.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220801 11:08:21.553" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220801 11:08:21.553" endtime="20220801 11:08:23.938"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220801 11:08:23.938" endtime="20220801 11:08:24.069"/>
+</kw>
+<kw name="Input Text xpath=//input[@id='txtUsername']">
+<arg>Admin</arg>
+<msg timestamp="20220801 11:08:24.073" level="FAIL">No keyword with name 'Input Text xpath=//input[@id='txtUsername']' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20220801 11:08:24.072" endtime="20220801 11:08:24.073"/>
+</kw>
+<kw name="Input Text name=txtPassword">
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20220801 11:08:24.079" endtime="20220801 11:08:24.079"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>css=input[id='btnLogin']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:08:24.079" endtime="20220801 11:08:24.079"/>
+</kw>
+<kw name="Page Should Contain Link" library="SeleniumLibrary">
+<arg>Dashboard</arg>
+<arg>timeout=5</arg>
+<doc>Verifies link identified by ``locator`` is found from current page.</doc>
+<status status="NOT RUN" starttime="20220801 11:08:24.080" endtime="20220801 11:08:24.080"/>
+</kw>
+<kw name="Element Text Should Be link=Dashboard Dashboard">
+<status status="NOT RUN" starttime="20220801 11:08:24.084" endtime="20220801 11:08:24.084"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220801 11:08:24.084" endtime="20220801 11:08:24.084"/>
+</kw>
+<tag>Smoke</tag>
+<status status="FAIL" starttime="20220801 11:08:21.552" endtime="20220801 11:08:24.085">No keyword with name 'Input Text xpath=//input[@id='txtUsername']' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<test id="s1-t2" name="TC_001-Launch WebOrder and login to application" line="19">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/Default.aspx</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220801 11:08:21.558" level="INFO">Opening browser 'Chrome' to base url 'http://secure.smartbearsoftware.com/samples/testcomplete11/WebOrders/Default.aspx'.</msg>
+<status status="PASS" starttime="20220801 11:08:21.558" endtime="20220801 11:08:23.298"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220801 11:08:23.299" endtime="20220801 11:08:23.475"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=ctl00_MainContent_username</arg>
+<arg>Tester</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220801 11:08:23.476" level="INFO">Typing text 'Tester' into text field 'id=ctl00_MainContent_username'.</msg>
+<status status="PASS" starttime="20220801 11:08:23.475" endtime="20220801 11:08:23.564"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=ctl00_MainContent_password</arg>
+<arg>test</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220801 11:08:23.565" level="INFO">Typing text 'test' into text field 'id=ctl00_MainContent_password'.</msg>
+<status status="PASS" starttime="20220801 11:08:23.564" endtime="20220801 11:08:23.651"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=ctl00_MainContent_login_button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220801 11:08:23.652" level="INFO">Clicking button 'id=ctl00_MainContent_login_button'.</msg>
+<status status="PASS" starttime="20220801 11:08:23.652" endtime="20220801 11:08:24.073"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>id=ctl00_MainContent_btnDelete</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20220801 11:08:24.123" level="INFO">Current page contains input 'id=ctl00_MainContent_btnDelete'.</msg>
+<status status="PASS" starttime="20220801 11:08:24.073" endtime="20220801 11:08:24.123"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220801 11:08:24.124" endtime="20220801 11:08:26.213"/>
+</kw>
+<status status="PASS" starttime="20220801 11:08:21.556" endtime="20220801 11:08:26.213"/>
+</test>
+<test id="s1-t3" name="Verify that a string can be written and read from a Simple Iframe" line="27">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://netbanking.hdfcbank.com/netbanking/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220801 11:08:21.556" level="INFO">Opening browser 'Chrome' to base url 'https://netbanking.hdfcbank.com/netbanking/'.</msg>
+<status status="PASS" starttime="20220801 11:08:21.556" endtime="20220801 11:08:25.936"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>xpath=//frame[@name='login_page']</arg>
+<arg>timeout=5</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220801 11:08:25.936" endtime="20220801 11:08:25.972"/>
+</kw>
+<kw name="Select Frame" library="SeleniumLibrary">
+<arg>name=login_page</arg>
+<doc>Sets frame identified by ``locator`` as the current frame.</doc>
+<msg timestamp="20220801 11:08:25.973" level="INFO">Selecting frame 'name=login_page'.</msg>
+<status status="PASS" starttime="20220801 11:08:25.972" endtime="20220801 11:08:26.001"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>css=input[name='fldLoginUserId']</arg>
+<arg>1000</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220801 11:08:26.002" level="INFO">Typing text '1000' into text field 'css=input[name='fldLoginUserId']'.</msg>
+<status status="PASS" starttime="20220801 11:08:26.001" endtime="20220801 11:08:26.070"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//a[normalize-space()='CONTINUE']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220801 11:08:26.071" level="INFO">Clicking element 'xpath=//a[normalize-space()='CONTINUE']'.</msg>
+<status status="PASS" starttime="20220801 11:08:26.070" endtime="20220801 11:08:27.067"/>
+</kw>
+<kw name="Element Should Contain" library="SeleniumLibrary">
+<arg>xpath=//span[normalize-space()='Password/ IPIN']</arg>
+<arg>Password/ IPIN</arg>
+<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
+<msg timestamp="20220801 11:08:27.095" level="INFO">Element 'xpath=//span[normalize-space()='Password/ IPIN']' contains text 'Password/ IPIN'.</msg>
+<status status="PASS" starttime="20220801 11:08:27.067" endtime="20220801 11:08:27.095"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220801 11:08:29.096" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220801 11:08:27.095" endtime="20220801 11:08:29.096"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220801 11:08:29.096" endtime="20220801 11:08:32.301"/>
+</kw>
+<doc>This test case handle iframe</doc>
+<status status="PASS" starttime="20220801 11:08:21.554" endtime="20220801 11:08:32.301"/>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20220801 11:08:21.282" endtime="20220801 11:08:32.302"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="2" fail="1" skip="0" id="s1" name="Parallel Test Execution">Parallel Test Execution</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

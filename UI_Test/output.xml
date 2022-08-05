@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Rebot 5.0.1 (Python 3.10.5 on win32)" generated="20220801 11:34:09.577" rpa="false" schemaversion="3">
+<suite id="s1" name="OrangrHRM Login With Variable" source="C:\RobotFramework\UI_Test\OrangrHRM_Login_With_Variable.robot">
+<test id="s1-t1" name="Launch OrangeHRM Login Page" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220801 11:34:07.373" level="INFO">Opening browser 'chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20220801 11:34:07.372" endtime="20220801 11:34:09.117"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220801 11:34:09.117" endtime="20220801 11:34:09.247"/>
+</kw>
+<kw name="Input Text name=txtUsername">
+<arg>Admin</arg>
+<msg timestamp="20220801 11:34:09.251" level="FAIL">No keyword with name 'Input Text name=txtUsername' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</msg>
+<status status="FAIL" starttime="20220801 11:34:09.251" endtime="20220801 11:34:09.252"/>
+</kw>
+<kw name="Input Text name=txtPassword">
+<arg>admin123</arg>
+<status status="NOT RUN" starttime="20220801 11:34:09.256" endtime="20220801 11:34:09.256"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//input[@id='btnLogin']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:34:09.256" endtime="20220801 11:34:09.256"/>
+</kw>
+<kw name="Element Text Should Be link=Dashboard Dashboard">
+<status status="NOT RUN" starttime="20220801 11:34:09.259" endtime="20220801 11:34:09.260"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" starttime="20220801 11:34:09.260" endtime="20220801 11:34:09.260"/>
+</kw>
+<status status="FAIL" starttime="20220801 11:34:07.371" endtime="20220801 11:34:09.261">No keyword with name 'Input Text name=txtUsername' found. Did you try using keyword 'SeleniumLibrary.Input Text' and forgot to use enough whitespace between keyword and arguments?</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20220801 11:34:07.102" endtime="20220801 11:34:09.262"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="OrangrHRM Login With Variable">OrangrHRM Login With Variable</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

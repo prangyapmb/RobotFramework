@@ -1,0 +1,9 @@
+==============================================================================
+Parallel Test Execution :: Suite description                                  
+==============================================================================
+TC_001-Launch WebOrder and login to application                       | PASS |
+------------------------------------------------------------------------------
+Parallel Test Execution :: Suite description                          | PASS |
+1 test, 1 passed, 0 failed
+==============================================================================
+Output:  C:\RobotFramework\UI_Test\Results3\pabot_results\1\output.xml

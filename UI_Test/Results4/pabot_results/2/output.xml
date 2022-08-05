@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.5 on win32)" generated="20220801 11:19:31.110" rpa="false" schemaversion="3">
+<suite id="s1" name="Depends On Testcase Execution" source="C:\RobotFramework\UI_Test\Depends_On_Testcase_Execution.robot">
+<test id="s1-t1" name="AddUser" line="26">
+<kw name="Depends On Test" library="DependencyLibrary">
+<arg>AddButton</arg>
+<msg timestamp="20220801 11:19:31.398" level="FAIL">Dependency not met: test case 'AddButton' not found.</msg>
+<status status="FAIL" starttime="20220801 11:19:31.397" endtime="20220801 11:19:31.399"/>
+</kw>
+<kw name="Generate Random String" library="String">
+<var>${random_num}</var>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.399" endtime="20220801 11:19:31.400"/>
+</kw>
+<kw name="Catenate" library="BuiltIn">
+<var>${empname}</var>
+<arg>SEPARATOR=</arg>
+<arg>Abhi</arg>
+<arg>${random_num}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.400" endtime="20220801 11:19:31.400"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${empname}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.400" endtime="20220801 11:19:31.400"/>
+</kw>
+<kw name="Set Global Variable" library="BuiltIn">
+<arg>${empname}</arg>
+<doc>Makes a variable available globally in all tests and suites.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.400" endtime="20220801 11:19:31.401"/>
+</kw>
+<kw name="Select From List By Label" library="SeleniumLibrary">
+<arg>id=systemUser_userType</arg>
+<arg>Admin</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.401" endtime="20220801 11:19:31.401"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=systemUser_employeeName_empName</arg>
+<arg>Fiona Grace</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.401" endtime="20220801 11:19:31.401"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=systemUser_userName</arg>
+<arg>${empname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.402" endtime="20220801 11:19:31.402"/>
+</kw>
+<kw name="Select From List By Value" library="SeleniumLibrary">
+<arg>id=systemUser_status</arg>
+<arg>1</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.402" endtime="20220801 11:19:31.402"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=systemUser_password</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.402" endtime="20220801 11:19:31.402"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id=systemUser_confirmPassword</arg>
+<arg>admin123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.403" endtime="20220801 11:19:31.403"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>id=btnSave1</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.403" endtime="20220801 11:19:31.403"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20220801 11:19:31.403" endtime="20220801 11:19:31.403"/>
+</kw>
+<status status="FAIL" starttime="20220801 11:19:31.394" endtime="20220801 11:19:31.404">Dependency not met: test case 'AddButton' not found.</status>
+</test>
+<doc>Suite description</doc>
+<status status="FAIL" starttime="20220801 11:19:31.121" endtime="20220801 11:19:31.406"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Depends On Testcase Execution">Depends On Testcase Execution</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
